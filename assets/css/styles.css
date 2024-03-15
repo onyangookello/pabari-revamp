@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --headings-font: 'Secular One', 'Mulish', sans-serif;
+    --primary-font: 'Mulish', sans-serif;
+    --navy-blue-color: #1B1464;
+    --red-color: #fc4c49;
+    --white: #fff;
+    --white-red: #FAFAFC;
+    --text-color: #666666;
+    --blue-black: #090722;
+    --white-pink: #FFCBCA;
+  }
+  body {
+    background-color: var(--white-red) !important;
+    font-family: var(--primary-font);
+    font-size: 1.25rem;
+    color: var(--text-color);
+  }
+  .navbar {
+    padding: 0.25rem;
+    background-color: var(--white-red) !important;
+    box-shadow: 0px 2px 2px var(--navy-blue-color);
+    z-index: 3;
+  }
+
+  .navbar .nav-link, .dropdown-item {
+    font-family: var(--headings-font);
+    color: var(--navy-blue-color) !important;
+    font-size: 1.25rem;
+  }
+  .navbar .navbar-toggler {
+    border: none;
+    color: var(--navy-blue-color);
+    height: 35px;
+    border-radius: 0;
+  }
+  .navbar-toggler:active {
+    border: none;
+  }
+  .banner-info {
+    background-color: var(--navy-blue-color);
+    padding: 0.5rem;
+    z-index: 4;
+  }
+  .banner-info p, i {
+    padding: 0.1rem;
+    margin: 0;
+  }
+  .banner-info p {
+    font-family: var(--primary-font);
+    font-size: 1rem;
+    color: white;
+  }
+  .banner-info i {
+    color: var(--red-color);
+    font-size: 1rem;
+  }
+
+  .half-viewport {
+    height: 40vh; /* Half of the viewport height */
+    width: 100%; /* 100% viewport width */
+    background-image: url('../images/wood.jpg'); /* Replace 'your-image.jpg' with your image path */
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    box-shadow: 0px 2px 2px var(--navy-blue-color);
+}
+
+.cta-text {
+  font-family: var(--primary-font);
+  font-weight: 800;
+  line-height:2.5rem;
+  z-index: 5;
+  color: var(--white);
+  font-size: 2.5rem;
+}
+@media (max-width: 576px) {
+  .cta-text {
+    font-family: var(--primary-font);
+    font-weight: 800;
+    line-height:2rem;
+    z-index: 5;
+    color: var(--white);
+    font-size: 2rem;
+  }
+  .half-viewport {
+    height: 50vh; /* Half of the viewport height */
+}
+}
+.red {
+  color: var(--red-color);
+}
+.intro-head {
+  font-family: var(--headings-font);
+  font-size: 2rem;
+  color: var(--navy-blue-color);
+}
+.services .card {
+  border: none;
+  border-radius: 2rem;
+  background-color: var(--white);
+}
+.services .card-title {
+  font-family: var(--headings-font);
+  color: var(--navy-blue-color);
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+.services .list-group-item {
+  font-family: var(--primary-font);
+  color: var(--text-color);
+  font-size: 1rem;
+}
+.de-button {
+  background-color: var(--navy-blue-color);
+  width: 175px;
+  padding: 0.5rem !important;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+.lighter-button {
+  background-color: var(--white-red);
+  color: var(--navy-blue-color);
+  border: 2px solid var(--navy-blue-color);
+  width: 175px;
+  padding: 0.5rem !important;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+
+.about .card {
+border-radius: 2rem;
+}
+.about h5 {
+  font-family: var(--primary-font);
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1B146420; /* Adjust the color and opacity as needed */
+  z-index: 1;
+}
+@media (max-width: 767.98px) {
+  .order-md-2 {
+      order: 1;
+  }
+  .order-md-1 {
+      order: 2;
+  }
+}
+
+.contact-form{
+  background: #fff;
+  margin-bottom: 5%;
+  border-radius: 2rem;
+}
+.contact-form .form-control{
+  border-radius:0.2rem;
+}
+.contact-image{
+  text-align: center;
+}
+.contact-icon i{
+  font-size: 3rem;
+  color: var(--red-color);
+}
+.contact-form form .row{
+  margin-bottom: -7%;
+}
+.contact-form h3{
+  text-align: center;
+  color: var(--navy-blue-color);
+  font-family: var(--headings-font);
+}
